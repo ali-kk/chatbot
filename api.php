@@ -6,8 +6,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 // Include config.php and prompt.php
-require_once 'secure/config.php';
-require_once 'secure/prompt.php';
+require_once '/etc/secure-chat-credentials/config.php';
+require_once '/etc/secure-chat-credentials/prompt.php';
 
 // Get the origin of the request
 $requestOrigin = $_SERVER['HTTP_ORIGIN'] ?? '';
