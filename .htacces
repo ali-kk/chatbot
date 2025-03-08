@@ -1,0 +1,5 @@
+# Block access to config.php and prompt.php
+<FilesMatch "^(config\.php|prompt\.php)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
